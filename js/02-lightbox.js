@@ -16,13 +16,13 @@ function creatElementGallery(galleryItems) {
    `).join('')
 }
 galleryEl.innerHTML = creatGallery
-const onImagClick = galleryEl.addEventListener('click',(e)=> {
-   e.preventDefault()
-   if (e.target.nodeName !== 'IMG') {
-      return
-   }
-const lightbox = new SimpleLightbox('.gallery a', {captionsData: 'alt', captionsDelay: 250, disableScroll: false });
-})
+
+new SimpleLightbox('.gallery a', {
+   captionsData: 'alt',
+   captionsDelay: 250,
+   disableScroll: false
+});
+
 
 
 
